@@ -16,13 +16,13 @@ public class Main {
             System.out.println("Enter number #" + (validEntries + 1) + ":");
             if (scanner.hasNextInt()) {
                 int num = scanner.nextInt();
-                scanner.nextLine();
                 sum += num;
                 validEntries++;
             }
             else {
-                scanner.nextLine();
+                System.out.println("Invalid Number");
             }
+            scanner.nextLine();
         }
         System.out.println("The sum of your number is: " + sum);
         scanner.close();
